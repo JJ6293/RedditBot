@@ -27,7 +27,7 @@ def run_bot(r, replies):
         #if a user comments the string in the specified subreddit, reply with humorous quote along with a hyperlink to a youtube video IF the comment was not already made by the same user OR the keyword was said by the bot itself (spam prevention)
         if "Killa" in comment.body and comment.id not in replies and comment.author != r.user.me():
             print ("String found " + comment.id)
-            comment.reply("Adam Sloss is the reason guacamole is now free at chipotle. He walked in, ordered a burrito, and asked for guac. The lady said \"sir, just so you know, guac is extra.\" Adam took off his hat, scratched his head and said \"what nega? It's literally right next to all the free shit dawg I'm not paying extra\" *dolphin laugh.* From that day, chipotle never charged for guac again. The Supreme Court calls it \"sloss vs guac\" and it will be in history books until the end of time.\n [WOOOOOOOOOOOOOOO](https://www.youtube.com/watch?v=NadRcgS4fQo)")
+            comment.reply("long string here. [hyperlinked text](youtube link here)")
             print ("Replied to comment to id code:" + comment.id)
             
             #adds comment id to "replies"
